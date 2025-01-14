@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "exomod",
+	"version": "${version}",
+	"name": "Exo Mod",
+	"description": "This is a mod that adds EXO skeleton to minecraft. Smash everything with your power!",
+	"authors": [
+		"Riser_Ava"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/exomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ra.exomod.Exomod"
+		],
+		"client": [
+			"ra.exomod.ExomodClient"
+		],
+		"fabric-datagen": [
+			"ra.exomod.ExomodDataGenerator"
+		]
+	},
+	"mixins": [
+		"exomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
